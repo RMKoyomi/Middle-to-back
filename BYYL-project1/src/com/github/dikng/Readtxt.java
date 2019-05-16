@@ -10,14 +10,8 @@ public class Readtxt {
     }
 
      */
-
-
-
-
-
-    public static String readFile() {
+    public static String readFile(String pathname) {
         StringBuilder result = new StringBuilder();
-        String pathname = "C:\\Users\\pc\\BYYL-project1\\output.txt";
         try (FileReader reader = new FileReader(pathname);
              BufferedReader br = new BufferedReader(reader)
         ) {
@@ -38,8 +32,6 @@ public class Readtxt {
        System.out.println("输入表达式的个数：");
        int count = sc.nextInt();
         System.out.println("输入中缀表达式：");
-
-
 
         try {
             File writeName = new File("C:\\Users\\pc\\BYYL-project1\\output.txt");
